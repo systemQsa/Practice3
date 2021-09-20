@@ -1,0 +1,13 @@
+Login;Name;Email
+ivanov;Ivan Ivanov;ivanov@mail.com
+петров;Петр Петров;petrov@google.com
+obama;Barack Obama;obama@google.com
+bush;Джордж Буш;bush@mail.com
+
+(.+?);(([a-zA-Zа-яА-Я]+)\s([a-zZA-Zа-яА-Я]+));([a-zA-Z]+@[a-z]+\.com)
+(?<=@).+?$
+(.+?);(.+?);.+?(?<=@)(.+?)$
+(.+?);(.+?);.+?(?<=@)(.+)
+(.+?);(.+?);.+?(?<=@)(.+)\.com
+(.+?);(.+?);.+?(?<=@)(.+)(\.com)
+^.+?$
